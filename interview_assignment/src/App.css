@@ -1,0 +1,51 @@
+.App {
+  margin: 0 20px;
+}
+.flights {
+  list-style: none;
+  display: flex;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  justify-content: space-between;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.flights li:first-child {
+  width: 105px;
+}
+.sky {
+  height: 60px;
+  padding: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+.pagination li {
+  border: 1px solid #ccc;
+  border-left: 0;
+
+  cursor: pointer;
+}
+.pagination li:first-child {
+  border-left: 1px solid #ccc;
+}
+.pagination li a,
+.pagination li a:visited {
+  display: block;
+  padding: 5px 10px;
+}
+.pagination li a:active,
+.pagination li a:focus {
+  outline: none;
+}
+.pagination li.active a,
+.pagination li.active a:visited {
+  background-color: #ccc;
+}

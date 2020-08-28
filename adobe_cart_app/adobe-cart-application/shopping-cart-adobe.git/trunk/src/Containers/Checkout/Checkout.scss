@@ -1,0 +1,15 @@
+.CheckoutParent {
+  display: flex;
+  padding: 20px;
+}
+.CProductsParent {
+  flex-grow: 1;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+.PriceDetailsParent {
+  width: 300px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}

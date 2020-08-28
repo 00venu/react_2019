@@ -1,0 +1,12 @@
+$appFont: Verdana, sans-serif;
+$appFontSize: 14px;
+$appColor: #333;
+$bgColorBody: #f1f3f6;
+$bgDefault: #fff;
+
+$pmZero: 0;
+//header
+$height: 50px;
+$headBg: #4269ea;
+
+$activeColor: #4269ea;

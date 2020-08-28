@@ -1,0 +1,32 @@
+@import "../../SCSS/Mixins.scss";
+
+.PDetails {
+  border: 1px solid #999;
+}
+.PriceDetailsParent h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  padding: 10px 5px;
+}
+.PriceDetailsParent ul {
+  @include NormalPadMarz;
+  border-top: 1px solid #ccc;
+
+  li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+  span:nth-child(1) {
+    min-width: 100px;
+  }
+}
+
+.Rupee {
+  height: 10px;
+  color: #666;
+  vertical-align: middle;
+}

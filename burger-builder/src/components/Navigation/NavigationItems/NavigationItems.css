@@ -1,0 +1,31 @@
+.NavigationItems {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.NavigationItems li {
+  list-style: none;
+  height: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.NavigationItems li a,
+.NavigationItems li a:visited {
+  height: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0 20px;
+  border-bottom: 2px solid transparent;
+  align-self: center;
+}
+.NavigationItems li a.active,
+.NavigationItems li a.active:visited {
+  color: maroon;
+  border-bottom: 2px solid maroon;
+}

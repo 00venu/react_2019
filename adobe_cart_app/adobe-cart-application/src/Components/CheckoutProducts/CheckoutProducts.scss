@@ -1,0 +1,60 @@
+.CProductParent {
+  border: 1px solid #999;
+  margin-bottom: 10px;
+}
+
+.CProductParent .Product {
+  width: auto;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.CProductParent .ProductImg {
+  width: 120px;
+  height: 100px;
+}
+.CProductParent .ProductImg img {
+  width: 120px;
+  height: 100px;
+}
+.CProductParent .Product ul {
+  width: 140px;
+  padding: 10px 10px 20px 0;
+}
+.itemQuantity {
+  width: 16px;
+  color: #999;
+}
+.circle {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+.QuantityHolder {
+  display: flex;
+}
+.QuantityHolder input {
+  width: 32px;
+  height: 24px;
+  border: 1px solid #999;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+}
+.Remove {
+  padding: 0 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+.CProductParent .ItemPrice ul {
+  width: auto;
+  min-width: 180px;
+}

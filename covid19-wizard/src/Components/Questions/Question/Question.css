@@ -1,0 +1,236 @@
+.QuestionContainer {
+  clear: both;
+}
+.Animate {
+  -webkit-animation: swing-in-top-fwd 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.Question {
+  background-color: #0076bc;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: 30px;
+  position: relative;
+  margin-left: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.Question span.Qicon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0076bc;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  margin: auto;
+  background-image: url(../../../Asserts/Images/icon-sprite.png);
+  background-position: 7px 7px;
+}
+.Options,
+.MultiSelection {
+  padding: 20px 0;
+  text-align: center;
+}
+.Options button,
+.MultiSelection button {
+  min-width: 119px;
+  height: 35px;
+  border: 1px solid #999;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #999;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 0 5px;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+.Options button:focus,
+.MultiSelection button:focus {
+  outline: none;
+}
+.Active {
+  background-color: #0076bc !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+.Confirm {
+  border: 1px solid orange !important;
+  color: orange !important;
+}
+.Confirm.active {
+  background-color: orange;
+  color: #fff;
+}
+.Options input {
+  width: 85%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.Options input:focus {
+  outline: none;
+}
+
+.MyEnter {
+  opacity: 0;
+}
+.MyEnterActive {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.MyExit {
+  opacity: 1;
+}
+.MyExitActive {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+/*
+.IdsEllipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.IdsEllipsis div {
+  position: absolute;
+  top: 33px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #0076bc;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.IdsEllipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.IdsEllipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.IdsEllipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.IdsEllipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}*/
+
+.IdsFacebook {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 80px;
+}
+.IdsFacebook div {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  width: 8px;
+  background: #0076bc;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.IdsFacebook div:nth-child(1) {
+  left: 4px;
+  animation-delay: -0.24s;
+}
+.IdsFacebook div:nth-child(2) {
+  left: 16px;
+  animation-delay: -0.12s;
+}
+.IdsFacebook div:nth-child(3) {
+  left: 28px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 48px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./Variables.scss";
+
+@mixin NormalPadMarz {
+  padding: $pmZero;
+  margin: $pmZero;
+}
+
+@mixin IconStyle($width, $height, $color) {
+  width: $width;
+  height: $height;
+  color: $color;
+}
+
+@mixin ListStyle {
+  @include NormalPadMarz;
+  display: flex;
+}
+
+@mixin defaultStyle($fontFamily, $fontSize, $color) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $color;
+}

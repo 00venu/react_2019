@@ -1,0 +1,5 @@
+@import "../../SCSS/Mixins.scss";
+
+.SearchStyle {
+  @include IconStyle(24px !important, 24px, #fff);
+}

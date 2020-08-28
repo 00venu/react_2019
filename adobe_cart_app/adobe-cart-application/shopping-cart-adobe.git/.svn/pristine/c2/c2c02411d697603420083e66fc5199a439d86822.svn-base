@@ -1,0 +1,28 @@
+@import "../../SCSS/Mixins.scss";
+
+.SortByContainer {
+  clear: both;
+  display: flex;
+  padding: 20px 0 0 20px;
+}
+.SortByContainer h3 {
+  @include NormalPadMarz;
+  font-size: $appFontSize;
+  padding-right: 20px;
+}
+.SortByContainer ul {
+  @include NormalPadMarz;
+  display: flex;
+}
+.SortByContainer ul li {
+  list-style: none;
+  font-size: $appFontSize;
+  margin: 0 20px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.SortByContainer ul li.active {
+  color: $activeColor;
+  border-bottom: 2px solid $activeColor;
+}

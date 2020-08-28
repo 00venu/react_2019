@@ -1,0 +1,7 @@
+@import "./SCSS/Mixins.scss";
+
+.Wrapper {
+  max-width: 1080px;
+  margin: auto;
+  background-color: $bgColorBody;
+}

@@ -1,0 +1,131 @@
+.RiskParent {
+  clear: both;
+  border-radius: 5px;
+  display: flex;
+  border: 1px solid #999;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.RiskLeft {
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-sizing: border-box;
+}
+.RiskLeft h3 {
+  width: 60%;
+  padding: 10px 15px;
+  background-color: #999;
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 10px;
+}
+.RiskLeft p {
+  padding: 10px 15px;
+  margin: 0;
+}
+.RiskRight {
+  width: 150px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+  align-self: center;
+}
+.LowRisk {
+  border: 1px solid #7cba03;
+}
+.LowRisk h3 {
+  background-color: #7cba03;
+}
+
+.IndicatorParent {
+  width: 93px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+.IndicatorContainer {
+  width: 93px;
+  height: 50px;
+  background-image: url(../../../../Asserts/Images/indicator_circle.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.NibIndicator {
+  width: 10px;
+  height: 10px;
+  border: 3px solid #666;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  background-color: #fff;
+}
+.LineIndicator {
+  width: 4px;
+  height: 24px;
+  background-color: #666;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  margin: auto;
+  border-radius: 20px;
+  z-index: 1;
+  transform-origin: bottom center;
+  transform: rotate(-55deg);
+  animation: cold 1s;
+}
+@keyframes cold {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-55deg);
+  }
+}
+
+.Animate {
+  -webkit-animation: swing-in-top-fwd 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}

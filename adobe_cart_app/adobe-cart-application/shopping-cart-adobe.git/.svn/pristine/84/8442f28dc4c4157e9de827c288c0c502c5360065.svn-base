@@ -1,0 +1,18 @@
+@import "../../SCSS/Mixins.scss";
+
+.ContainerParent {
+  clear: both;
+  display: flex;
+}
+.FilterContainer {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.FilterContainer h3 {
+  font-size: $appFontSize;
+}
+.ProductsContainer {
+  flex-grow: 1;
+}

@@ -1,0 +1,22 @@
+@import "../../SCSS/Mixins.scss";
+
+.CartStyle {
+  @include IconStyle(24px !important, 24px, #fff);
+}
+.CartParent {
+  position: relative;
+}
+.CartParent span {
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  font-size: 8px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: #fff;
+  border-radius: 25px;
+  padding: 2px;
+  text-align: center;
+}

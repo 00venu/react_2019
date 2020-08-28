@@ -1,0 +1,129 @@
+.QuestionContainer {
+  clear: both;
+  -webkit-animation: swingintopfwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both;
+  animation: swingintopfwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.Question {
+  background-color: #0076bc;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: 30px;
+  position: relative;
+  margin-left: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.Question span.Qicon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0076bc;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  margin: auto;
+  background-image: url(../../Asserts/Images/icon-sprite.png);
+  background-position: 7px 7px;
+}
+.Options,
+.MultiSelection {
+  padding: 20px 0;
+  text-align: center;
+}
+.Options button,
+.MultiSelection button {
+  min-width: 119px;
+  height: 35px;
+  border: 1px solid #999;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #999;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 0 5px;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+.Options button:focus,
+.MultiSelection button:focus {
+  outline: none;
+}
+.Active {
+  background-color: #0076bc !important;
+  color: #fff !important;
+  border: 1px solid transparent !important;
+}
+.MultiSelection button.confirm {
+  border: 1px solid orange;
+  color: orange;
+}
+.MultiSelection button.confirm.active {
+  background-color: orange;
+  color: #fff;
+}
+.Options input {
+  width: 85%;
+  height: 40px;
+  padding: 10px 20px;
+  border: 1px solid #999;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.Options input:focus {
+  outline: none;
+}
+
+.Test {
+  color: red;
+}
+
+/* @-webkit-keyframes swingintopfwd {
+      0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+      }
+    }
+    @keyframes swingintopfwd {
+      0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+      }
+    } */

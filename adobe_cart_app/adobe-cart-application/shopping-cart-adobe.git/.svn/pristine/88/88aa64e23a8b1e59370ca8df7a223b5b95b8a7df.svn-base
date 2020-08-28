@@ -1,0 +1,58 @@
+@import "../../../SCSS/Mixins.scss";
+
+.Product {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}
+.ProductImg {
+  height: 160px;
+  background-color: #999;
+  overflow: hidden;
+}
+.ProductImg img {
+  width: 180px;
+  height: 160px;
+}
+.Product h3 {
+  font-size: 13px;
+  font-weight: normal;
+  text-align: left;
+  padding-top: 10px;
+}
+.BtnAdd {
+  background-color: #f7ad22;
+  border-radius: 25px;
+  font-size: 12px;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  margin-top: 5px;
+}
+.BtnAdd:focus {
+  outline: none;
+}
+.Product ul {
+  @include NormalPadMarz;
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+
+  li {
+    list-style: none;
+    font-size: 13px;
+  }
+  :nth-child(1) {
+    font-weight: 600;
+  }
+  :nth-child(2) {
+    color: #999;
+    text-decoration: line-through;
+  }
+  :nth-child(3) {
+    color: #11a111;
+    font-weight: 600;
+  }
+}
